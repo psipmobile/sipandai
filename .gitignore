@@ -1,0 +1,48 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+.eggs/
+build/
+dist/
+rasaenv/
+
+# Logs and local files
+*.log
+*.out
+*.err
+debug/
+logs/
+results/
+
+# Rasa specific files and directories
+# Ignore model archives
+models/
+# Ignore checkpoints
+checkpoints/
+# Ignore any personal data stored in Rasa's persistent tracker store
+events.db
+rasa.db
+# Ignore configuration cache
+.rasa/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# VS Code settings
+.vscode/
+
+# System specific files
+.DS_Store
+Thumbs.db

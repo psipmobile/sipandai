@@ -1,0 +1,166 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - selamat pagi
+      - selamat malam
+      - selamat sore
+      - apa kabar
+      - pagi
+      - malam
+      - sore
+      - wilujeng enjing
+      - wilujeng siang
+      - wilujeng sore
+
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
+      - sampai jumpa
+      - selamat tinggal
+      - sampai bertemu lagi
+      - sampai nanti
+      - selamat jalan
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - ya
+      - benar
+      - betul
+      - tentu
+      - oke
+      - tentu saja
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - tidak
+      - nggak
+      - tidak suka
+      - tidak mau
+      - sama sekali tidak
+      - saya rasa tidak
+      - bukan
+
+  - intent: mood_great
+    examples: |
+      - perfect
+      - great
+      - amazing
+      - feeling like a king
+      - wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - super stoked
+      - extremely good
+      - so so perfect
+      - so good
+      - so perfect
+      - luar biasa
+      - saya merasa hebat
+      - saya sangat senang
+      - sempurna
+      - saya merasa luar biasa
+      - hari ini sangat bagus
+      - sangat baik
+
+  - intent: mood_unhappy
+    examples: |
+      - my day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - super sad
+      - I'm so sad
+      - sad
+      - very sad
+      - unhappy
+      - not good
+      - not very good
+      - extremly sad
+      - so saad
+      - so sad
+      - hari saya sangat buruk
+      - saya sedih
+      - saya merasa tidak enak
+      - saya kecewa
+      - sangat sedih
+      - saya merasa sedih
+      - sangat kecewa
+      - hari ini menyedihkan
+      - saya tidak senang
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?
+      - apakah kamu bot?
+      - apakah kamu manusia?
+      - saya berbicara dengan bot?
+      - saya berbicara dengan manusia?
+
+  - intent: ask_question
+    examples: |
+      - What is the tax rate for my vehicle?
+      - How much tax do I owe for Z 5116 CO?
+      - Can you check my tax information?
+      - Berapa tarif pajak untuk kendaraan saya?
+      - Berapa pajak yang harus saya bayar untuk Z 5116 CO?
+      - Dapatkah Anda memeriksa informasi pajak saya?
+
+  - intent: check_pajak
+    examples: |
+      - Berapa pajak saya untuk nomor polisi [Z 5116 CO](no_polisi)?
+      - Cek pajak untuk nomor polisi [B 1234 XYZ](no_polisi)
+      - Bisa cek pajak kendaraan dengan nomor polisi [D 4567 ABC](no_polisi)?
+      - Tolong cek pajak dengan nomor polisi [F 9876 DEF](no_polisi)
+      - cek pajak [F 9876 DEF](no_polisi)
+      - Berapa besaran pajak kendaraan dengan nomor polisi [A 1234 GH](no_polisi)?
+      - Bisa info pajak untuk nomor polisi [D 7890 IJ](no_polisi)?
+      - Tolong cek besaran pajak kendaraan saya dengan nomor polisi [B 5678 KL](no_polisi)
+      - Cek jumlah pajak untuk nomor polisi [Z 3456 MN](no_polisi)
+      - Berapa besar pajak untuk kendaraan dengan nomor polisi [F 6543 OP](no_polisi)?
+      - Mohon info pajak kendaraan dengan nomor polisi [E 4321 QR](no_polisi)
+      - Bisa cek pajak kendaraan dengan nomor polisi [T 8765 ST](no_polisi)?
+      - Tolong cek pajak dengan nomor polisi [H 9876 UV](no_polisi)
+      - cek pajak [N 1234 WX](no_polisi)
+      - Info pajak kendaraan nomor [B 5678 YZ](no_polisi)
