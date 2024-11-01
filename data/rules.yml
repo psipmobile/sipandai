@@ -1,12 +1,17 @@
 version: "3.1"
 
 rules:
-  - rule: Say goodbye anytime the user says goodbye
+  - rule: Handle check_pajak
     steps:
-      - intent: goodbye
-      - action: utter_goodbye
+      - intent: check_pajak
+      - action: action_check_pajak
 
-  - rule: Say 'I am a bot' anytime the user challenges
+  - rule: Fallback to Gemini
     steps:
-      - intent: bot_challenge
-      - action: utter_iamabot
+      - action: action_default_fallback
+      - action: action_call_gpt
+
+  - rule: Handle general queries via Gemini
+    steps:
+      - intent: default_query
+      - action: action_call_gpt
